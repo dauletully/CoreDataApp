@@ -1,7 +1,4 @@
-
 import Foundation
-
-
 
 struct People {
     let name: String
