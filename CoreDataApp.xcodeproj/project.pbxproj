@@ -13,7 +13,6 @@
 		370907532B516F3F0033ABE7 /* CoreDataApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 370907512B516F3F0033ABE7 /* CoreDataApp.xcdatamodeld */; };
 		370907552B516F410033ABE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370907542B516F410033ABE7 /* Assets.xcassets */; };
 		370907582B516F410033ABE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370907562B516F410033ABE7 /* LaunchScreen.storyboard */; };
-		370907612B5172B10033ABE7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370907602B5172B10033ABE7 /* Model.swift */; };
 		3709076C2B5407520033ABE7 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709076B2B5407520033ABE7 /* MainPageView.swift */; };
 		370907722B540AC10033ABE7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 370907712B540AC10033ABE7 /* SnapKit */; };
 		370907742B540AC10033ABE7 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 370907732B540AC10033ABE7 /* SnapKit-Dynamic */; };
@@ -34,7 +33,6 @@
 		370907542B516F410033ABE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		370907572B516F410033ABE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		370907592B516F410033ABE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		370907602B5172B10033ABE7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3709076B2B5407520033ABE7 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
 		370907752B540D120033ABE7 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		370907782B5424800033ABE7 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
@@ -60,8 +58,6 @@
 		3709073C2B516F3F0033ABE7 = {
 			isa = PBXGroup;
 			children = (
-				3709077C2B5513D80033ABE7 /* Person+CoreDataClass.swift */,
-				3709077D2B5513D80033ABE7 /* Person+CoreDataProperties.swift */,
 				370907472B516F3F0033ABE7 /* CoreDataApp */,
 				370907462B516F3F0033ABE7 /* Products */,
 			);
@@ -119,7 +115,8 @@
 		370907682B5406E10033ABE7 /* Modul */ = {
 			isa = PBXGroup;
 			children = (
-				370907602B5172B10033ABE7 /* Model.swift */,
+				3709077C2B5513D80033ABE7 /* Person+CoreDataClass.swift */,
+				3709077D2B5513D80033ABE7 /* Person+CoreDataProperties.swift */,
 			);
 			path = Modul;
 			sourceTree = "<group>";
@@ -237,7 +234,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3709077B2B54368A0033ABE7 /* UserController.swift in Sources */,
-				370907612B5172B10033ABE7 /* Model.swift in Sources */,
 				3709077E2B5513D80033ABE7 /* Person+CoreDataClass.swift in Sources */,
 				370907792B5424800033ABE7 /* UserView.swift in Sources */,
 				370907532B516F3F0033ABE7 /* CoreDataApp.xcdatamodeld in Sources */,

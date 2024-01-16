@@ -5,7 +5,7 @@ import CoreData
 
 class ViewController: UIViewController {
     
-    var mainView = MainPageView()
+    private var mainView = MainPageView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +26,9 @@ class ViewController: UIViewController {
 extension ViewController: MainViewDelegate {
     func setGreeting(person: Person) {
         let vc = UserController()
+        vc.userInfo = person
         navigationController?.pushViewController(vc, animated: true)
     }
     
-
 }
 

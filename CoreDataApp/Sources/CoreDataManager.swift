@@ -7,10 +7,9 @@ import CoreData
 
 class CoreDataManager {
     static let shared = CoreDataManager()
-
     private init() {}
 
-    
+    //MARK: - Saving inputting data to storage
     func saveData(currentName: String) {
          let appDelegate = UIApplication.shared.delegate as? AppDelegate
         guard let context = appDelegate?.persistentContainer.viewContext else { return }
@@ -28,6 +27,22 @@ class CoreDataManager {
         }
     }
 
+    //MARK: - Updating data in storage
+    func updateData(newName: String, gender: String?, currentUser: Person?) {
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        guard let context = appDelegate?.persistentContainer.viewContext else {return}
+        currentUser?.name = newName
+        currentUser?.gender = gender
+
+        do {
+            try context.save()
+            print("Data has been updated")
+        } catch {
+            print("Error has been occured during updating: \(error)")
+        }
+    }
+
+    //MARK: - Getting inputting data from storage
     func fetchData() -> [Person] {
         var currentData = [Person]()
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
@@ -42,6 +57,7 @@ class CoreDataManager {
         return currentData
     }
 
+    //MARK: - Deleting exact data from storage
     func deleteData(userEntity: Person) {
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
         guard let context = appDelegate?.persistentContainer.viewContext else {fatalError()}

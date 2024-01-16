@@ -9,22 +9,24 @@ import UIKit
 
 class UserController: UIViewController {
 
+    //MARK: - Info elements
+    public var userInfo: Person?
     private var userView = UserView()
-    public var person: Person?
+
     override func loadView() {
        super.loadView()
         view = userView
-    
-
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         setupViews()
+
     }
 
     private func setupViews() {
-        userView.configureTextFields(data: person?.name ?? "None")
+        userView.configureTextFields(data: userInfo)
     }
 
 

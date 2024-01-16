@@ -17,7 +17,8 @@ class MainPageView: UIView {
 
     weak var delegate: MainViewDelegate?
     private lazy var person: [Person] = []
-
+    
+    //MARK: - UI elements
     private lazy var textField: UITextField = {
         let textField = UITextField()
         textField.font = .systemFont(ofSize: 16)
@@ -46,12 +47,11 @@ class MainPageView: UIView {
         return tableView
     }()
 
-
+    //MARK: - Life style App
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
         setupConstraints()
-//        self.person = CoreDataManager.shared.fetchData()
         tableView.reloadData()
 
     }
@@ -71,12 +71,6 @@ class MainPageView: UIView {
         self.person = person
     }
 
-    private func setupUI() {
-        addSubview(textField)
-        addSubview(button)
-        addSubview(tableView)
-
-    }
     @objc public func addButton() {
         guard let addingName = self.textField.text else { return }
         CoreDataManager.shared.saveData(currentName: addingName)
@@ -84,8 +78,13 @@ class MainPageView: UIView {
         self.tableView.reloadData()
         self.textField.text = ""
     }
+    //MARK: - setup
+    private func setupUI() {
+        addSubview(textField)
+        addSubview(button)
+        addSubview(tableView)
 
-
+    }
 
     private func setupConstraints() {
         textField.snp.makeConstraints { make in
@@ -130,7 +129,9 @@ extension MainPageView: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        delegate?.setGreeting(person: person[indexPath.row])
+        let currentUser = person[indexPath.row]
+        delegate?.setGreeting(person: currentUser)
+
     }
 
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {

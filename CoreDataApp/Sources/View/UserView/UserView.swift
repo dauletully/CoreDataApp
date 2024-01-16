@@ -10,17 +10,19 @@ import SnapKit
 
 class UserView: UIView {
 
-    var editTextFieldToggle: Bool = false
-    
+    private var editTextFieldToggle: Bool = false
+    private var currentPerson: Person?
+
     //MARK: - UI elements
+
     private lazy var button: UIButton = {
         var button = UIButton(type: .system)
         button.setTitle("Edit", for: .normal)
         button.setTitleColor(.gray, for: .normal)
         button.titleLabel?.font = .boldSystemFont(ofSize: 25)
-        button.backgroundColor = .systemBackground
-        button.layer.borderWidth = 1
-        
+        button.backgroundColor = .blue
+        button.addTarget(self, action: #selector(saveEditButton), for: .touchUpInside)
+
         return button
     }()
 
@@ -34,17 +36,22 @@ class UserView: UIView {
 
     private lazy var textFieldName: UITextField = {
         var textField = UITextField()
-        textField.setLeftIcon(UIImage(systemName: "star") ?? UIImage())
+        textField.setLeftIcon(UIImage(systemName: "person.fill") ?? UIImage())
         textField.font = .systemFont(ofSize: 20)
+        textField.isUserInteractionEnabled = false
+
         return  textField
     }()
 
     private lazy var textFieldGender: UITextField = {
         var textField = UITextField()
-        textField.setLeftIcon(UIImage(systemName: "star") ?? UIImage())
+        textField.setLeftIcon(UIImage(systemName: "person.2.fill") ?? UIImage())
         textField.font = .systemFont(ofSize: 20)
+        textField.isUserInteractionEnabled = false
+
         return  textField
     }()
+
     //MARK: - Life cycle UI
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -61,14 +68,36 @@ class UserView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     //MARK: - functions
-    public func configureTextFields(data: String) {
-        self.textFieldName.text = data
+    @objc public func saveEditButton() {
+        let updatedingName = textFieldName.text
+        let updateingGender = textFieldGender.text
+
+        if !editTextFieldToggle {
+            button.setTitle("Save", for: .normal)
+            editTextFieldToggle = true
+            textFieldName.isUserInteractionEnabled = true
+            textFieldGender.isUserInteractionEnabled = true
+        } else {
+            button.setTitle("Edit", for: .normal)
+            editTextFieldToggle = false
+            textFieldName.isUserInteractionEnabled = false
+            textFieldGender.isUserInteractionEnabled = false
+            CoreDataManager.shared.updateData(newName:updatedingName ?? "", gender: updateingGender ?? "",currentUser: currentPerson)
+            
+        }
     }
-    
 
-
-    
+    public func configureTextFields(data: Person?) {
+        currentPerson = data
+        self.textFieldName.text = data?.name
+        if data?.gender != nil {
+            self.textFieldGender.text = data?.gender
+        } else {
+            self.textFieldGender.placeholder = "Choose your gender"
+        }
+    }
 
     //MARK: - Setup
     private func setupUI() {
@@ -79,15 +108,9 @@ class UserView: UIView {
     }
 
     private func setupConstraints() {
-        button.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(100)
-            make.right.equalToSuperview().offset(-20)
-            make.height.equalTo(50)
-            make.width.equalTo(90)
-        }
 
         imageView.snp.makeConstraints { make in
-            make.top.equalTo(button.snp.bottom).offset(150)
+            make.top.equalToSuperview().offset(150)
             make.centerX.equalToSuperview()
         }
 
@@ -102,10 +125,16 @@ class UserView: UIView {
             make.left.equalToSuperview().offset(10)
             make.right.equalToSuperview().offset(-10)
         }
+
+        button.snp.makeConstraints { make in
+            make.top.equalTo(textFieldGender.snp.bottom).offset(100)
+            make.centerX.equalToSuperview()
+            make.height.equalTo(50)
+            make.width.equalTo(90)
+        }
     }
-
-
 }
+//MARK: - Extensions
 extension UIImageView {
 
     public func maskCircle(anyImage: UIImage) {
