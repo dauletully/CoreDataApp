@@ -14,6 +14,7 @@ class UserController: UIViewController {
     override func loadView() {
        super.loadView()
         view = userView
+    
 
     }
     override func viewDidLoad() {
@@ -24,18 +25,7 @@ class UserController: UIViewController {
 
     private func setupViews() {
         userView.configureTextFields(data: person?.name ?? "None")
-        userView.addButtonTarget(self, action: #selector(changeButtonText))
-
     }
-    
-    @objc func changeButtonText() {
-        print("pressed")
-        if !userView.editTextFieldToggle {
-            userView.setButtonText(text: "Save")
-            userView.editTextFieldToggle = true
-        } else {
-            userView.setButtonText(text: "Edit")
-            userView.editTextFieldToggle = false
-        }
-  }
+
+
 }

@@ -2,14 +2,12 @@
 import UIKit
 import SnapKit
 
-var identifier = "cell_id"
 
 class TableViewCell: UITableViewCell {
     
     private lazy var label: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 30)
-        label.backgroundColor = .gray
+        label.font = .systemFont(ofSize: 25)
 
         return label
     }()
@@ -27,6 +25,11 @@ class TableViewCell: UITableViewCell {
 
     override func layoutSubviews() {
         super.layoutSubviews()
+        
+    }
+
+    public func configure(name: String) {
+        self.label.text = name
         
     }
 

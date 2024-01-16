@@ -20,6 +20,7 @@ class UserView: UIView {
         button.titleLabel?.font = .boldSystemFont(ofSize: 25)
         button.backgroundColor = .systemBackground
         button.layer.borderWidth = 1
+        
         return button
     }()
 
@@ -65,13 +66,9 @@ class UserView: UIView {
         self.textFieldName.text = data
     }
     
-    public func addButtonTarget(_ target: Any?, action: Selector) {
-        button.addTarget(target, action: action, for: .touchUpInside)
-    }
 
-    public func setButtonText(text: String) {
-        button.setTitle(text, for: .normal)
-    }
+
+    
 
     //MARK: - Setup
     private func setupUI() {

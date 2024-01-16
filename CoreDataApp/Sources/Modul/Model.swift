@@ -6,3 +6,6 @@ struct People {
     let gender: String
 }
 
+extension People {
+    static var user: People  = People(name: "Kyle", birthday: "", gender: "man")
+}

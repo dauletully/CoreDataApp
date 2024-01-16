@@ -1,17 +1,17 @@
 
 import UIKit
+import CoreData
 
 
 class ViewController: UIViewController {
     
     var mainView = MainPageView()
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         view = mainView
         setupUI()
-       // guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return  }
+        
     }
 
     private func setupUI() {
@@ -19,11 +19,12 @@ class ViewController: UIViewController {
         title = "Users"
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
+        mainView.configure(person: CoreDataManager.shared.fetchData())
     }
 }
 
 extension ViewController: MainViewDelegate {
-    func setGreeting(person: People) {
+    func setGreeting(person: Person) {
         let vc = UserController()
         navigationController?.pushViewController(vc, animated: true)
     }

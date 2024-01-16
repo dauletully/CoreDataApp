@@ -14,8 +14,8 @@
             filePath = "CoreDataApp/Sources/Controller/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "setGreeting(person:)"
             landmarkType = "7">
             <Locations>
@@ -62,10 +62,57 @@
             filePath = "CoreDataApp/Sources/View/MainView/MainPageView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0F7DDF0F-0C27-4CFC-9634-F39D6495CD66 - 1a281393865c6ba7"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataApp.MainPageView.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "CoreDataApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dimka/Documents/Swift%20course/CoreDataApp/CoreDataApp/Sources/View/MainView/MainPageView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "232">
+               </Location>
+               <Location
+                  uuid = "0F7DDF0F-0C27-4CFC-9634-F39D6495CD66 - 1a281393865c6dd5"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataApp.MainPageView.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "CoreDataApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dimka/Documents/Swift%20course/CoreDataApp/CoreDataApp/Sources/View/MainView/MainPageView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "0F7DDF0F-0C27-4CFC-9634-F39D6495CD66 - 1a281393865c6d51"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataApp.MainPageView.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "CoreDataApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dimka/Documents/Swift%20course/CoreDataApp/CoreDataApp/Sources/View/MainView/MainPageView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "216">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -87,86 +134,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2476D724-B459-47C2-B798-3A8C729B6AC1"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoreDataApp/Sources/Controller/UserController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "setupViews()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2476D724-B459-47C2-B798-3A8C729B6AC1 - 7eee98a0beb7d134"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CoreDataApp.UserController.setupViews() -&gt; ()"
-                  moduleName = "CoreDataApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dimka/Documents/Swift%20course/CoreDataApp/CoreDataApp/Sources/Controller/UserController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "548">
-               </Location>
-               <Location
-                  uuid = "2476D724-B459-47C2-B798-3A8C729B6AC1 - 7eee98a0beb7d0fa"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CoreDataApp.UserController.setupViews() -&gt; ()"
-                  moduleName = "CoreDataApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dimka/Documents/Swift%20course/CoreDataApp/CoreDataApp/Sources/Controller/UserController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "848">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "40281DDC-41E0-4198-9A9B-3EBC9FA2E961"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoreDataApp/Sources/Controller/UserController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "setupViews()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "64035F61-F20E-4466-912C-459B1CCD070F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoreDataApp/Sources/Controller/UserController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "changeButtonText()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "6C464165-DD85-40B9-BC76-66369CE587D3"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -174,10 +141,278 @@
             filePath = "CoreDataApp/Sources/View/UserView/UserView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "addButtonTarget(_:action:)"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "UserView"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D06FC69F-EAA6-4F17-8E62-8156B3A1DB42"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataApp/Sources/CoreDataManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "saveData(currentName:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41FB5017-6F60-4F3E-BED1-61D6AF3B6CE7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataApp/Sources/View/MainView/MainPageView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "addButton()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74BBB29A-FEA3-4B2D-B3DB-87FA07EDE5C5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataApp/Sources/View/MainView/TableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "configure(name:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "995D9F51-01E2-48B4-87E1-02DDF705CEC0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataApp/Sources/View/MainView/MainPageView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "70644C05-373B-416A-AA4A-B597F8BF9BE6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataApp/Sources/View/MainView/MainPageView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF668862-68A2-4978-86ED-07C09AE3FF6D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataApp/Sources/View/MainView/MainPageView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "addButton()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3441E66D-7D6F-4899-BEC2-7A548B5D54F9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataApp/Sources/View/MainView/MainPageView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D33BF842-6BC1-41F4-BF03-E62D784CAA1D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataApp/Sources/CoreDataManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "fetchData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D33BF842-6BC1-41F4-BF03-E62D784CAA1D - dde06549a96ea5a1"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataApp.CoreDataManager.fetchData() -&gt; Swift.Array&lt;CoreDataApp.Person&gt;"
+                  moduleName = "CoreDataApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dimka/Documents/Swift%20course/CoreDataApp/CoreDataApp/Sources/CoreDataManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "D33BF842-6BC1-41F4-BF03-E62D784CAA1D - dde06549a96ea5a1"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataApp.CoreDataManager.fetchData() -&gt; Swift.Array&lt;CoreDataApp.Person&gt;"
+                  moduleName = "CoreDataApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dimka/Documents/Swift%20course/CoreDataApp/CoreDataApp/Sources/CoreDataManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED1512A0-65A9-4DB9-9EE3-0E3E9CD39481"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataApp/Sources/Controller/UserController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "UserController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "ED1512A0-65A9-4DB9-9EE3-0E3E9CD39481 - 3b85a9ad4231b6bc"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataApp.UserController.person.getter : Swift.Optional&lt;CoreDataApp.Person&gt;"
+                  moduleName = "CoreDataApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dimka/Documents/Swift%20course/CoreDataApp/CoreDataApp/Sources/Controller/UserController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "ED1512A0-65A9-4DB9-9EE3-0E3E9CD39481 - 9404a0035a900c3f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataApp.UserController.person.setter : Swift.Optional&lt;CoreDataApp.Person&gt;"
+                  moduleName = "CoreDataApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dimka/Documents/Swift%20course/CoreDataApp/CoreDataApp/Sources/Controller/UserController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "ED1512A0-65A9-4DB9-9EE3-0E3E9CD39481 - aa9da77da60cc60e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataApp.UserController.person.modify : Swift.Optional&lt;CoreDataApp.Person&gt;"
+                  moduleName = "CoreDataApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dimka/Documents/Swift%20course/CoreDataApp/CoreDataApp/Sources/Controller/UserController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "ED1512A0-65A9-4DB9-9EE3-0E3E9CD39481 - a51bcdeea06483c9"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataApp.UserController.person.modify : Swift.Optional&lt;CoreDataApp.Person&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CoreDataApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dimka/Documents/Swift%20course/CoreDataApp/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "ED1512A0-65A9-4DB9-9EE3-0E3E9CD39481 - 9a4ed4239b6b0b31"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataApp.UserController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CoreDataApp.UserController"
+                  moduleName = "CoreDataApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dimka/Documents/Swift%20course/CoreDataApp/CoreDataApp/Sources/Controller/UserController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "ED1512A0-65A9-4DB9-9EE3-0E3E9CD39481 - 1d5fab1d3801c248"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataApp.UserController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CoreDataApp.UserController&gt;"
+                  moduleName = "CoreDataApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dimka/Documents/Swift%20course/CoreDataApp/CoreDataApp/Sources/Controller/UserController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "120">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

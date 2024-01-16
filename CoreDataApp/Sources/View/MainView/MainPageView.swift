@@ -7,20 +7,21 @@
 
 import UIKit
 import SnapKit
+import CoreData
 
 protocol MainViewDelegate: AnyObject {
-    func setGreeting(person: People)
+    func setGreeting(person: Person)
 }
 
 class MainPageView: UIView {
 
     weak var delegate: MainViewDelegate?
+    private lazy var person: [Person] = []
 
     private lazy var textField: UITextField = {
         let textField = UITextField()
         textField.font = .systemFont(ofSize: 16)
         textField.placeholder = "Enter text"
-
         return textField
     }()
 
@@ -29,25 +30,30 @@ class MainPageView: UIView {
         button.setTitle("Press", for: .normal)
         button.backgroundColor = .blue
         button.setTitleColor(.white, for: .normal)
+        button.addTarget(self, action: #selector(addButton), for: .touchUpInside)
 
         return button
     }()
 
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
-        tableView.register(TableViewCell.self, forCellReuseIdentifier: identifier)
+        tableView.register(TableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.rowHeight = 40
+        tableView.layer.cornerRadius = 6.0
         tableView.delegate = self
         tableView.dataSource = self
 
         return tableView
     }()
 
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
         setupConstraints()
-        
+//        self.person = CoreDataManager.shared.fetchData()
+        tableView.reloadData()
+
     }
     
     required init?(coder: NSCoder) {
@@ -61,11 +67,25 @@ class MainPageView: UIView {
         button.layer.cornerRadius = 7
     }
 
+    public func configure(person: [Person]) {
+        self.person = person
+    }
+
     private func setupUI() {
         addSubview(textField)
         addSubview(button)
         addSubview(tableView)
+
     }
+    @objc public func addButton() {
+        guard let addingName = self.textField.text else { return }
+        CoreDataManager.shared.saveData(currentName: addingName)
+        self.person = CoreDataManager.shared.fetchData()
+        self.tableView.reloadData()
+        self.textField.text = ""
+    }
+
+
 
     private func setupConstraints() {
         textField.snp.makeConstraints { make in
@@ -95,16 +115,14 @@ class MainPageView: UIView {
 }
 
 extension MainPageView: UITableViewDelegate, UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return person.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? TableViewCell else {return UITableViewCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell else {return UITableViewCell()}
+        cell.configure(name: person[indexPath.row].name ?? "")
         cell.accessoryType = .disclosureIndicator
 
         return cell
@@ -112,7 +130,22 @@ extension MainPageView: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        delegate?.setGreeting(person: People.init(name: "", birthday: "", gender: ""))
+        delegate?.setGreeting(person: person[indexPath.row])
+    }
+
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tableView.beginUpdates()
+            CoreDataManager.shared.deleteData(userEntity: person[indexPath.row])
+            person.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.endUpdates()
+            tableView.reloadData()
+        }
     }
 
 }
